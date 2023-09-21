@@ -44,7 +44,7 @@ Replace `main` with the name of the branch you want
 # Section 2: Display and Positioning in CSS
 
 ## Task 1: Inline-block
-- Change the display property of the li items with class .inline-block to "inline-block". 
+- Change the display property of the li items with class .favorite-food to "inline-block". 
 - Give it 5px of padding as well to space them out
 
 ## Task 2: position: relative
