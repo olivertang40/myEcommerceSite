@@ -7,13 +7,17 @@
 
 /* Section 1: Selectors in CSS + Box Model */
 
-
 /*
 Task 1:  Targeting Elements by Tag Name + Border
 - Select all 'p' tags and change the font-size to 16px
 - Finally, add a border around all p elements with a 1px solid line of any color you choose
 */
-
+p{
+  font-size: 16px;
+  border:1px;
+  border-style: solid;
+  border-color: pink;
+}
 
 /*
 Task 2:  Targeting Elements by Class + Padding
@@ -22,7 +26,10 @@ Task 2:  Targeting Elements by Class + Padding
 - Below this comment, target the class you just made and give it a pretty background color
 - Give it 20px of padding - note that the background color 'grows' around the text
 */
-
+.nav{
+  background-color: aqua;
+  padding: 20px;
+}
 
 
 /*
@@ -31,7 +38,10 @@ Task 3:  Targeting Elements by ID + Margin
 - Below this comment, target that element by its ID and give it a border radius of 2em
 - Finally, add 15px of margin to the bottom of that element. Note that it pushes the other inputs down
 */
-
+#name{
+  border-radius: 2em;
+  margin-bottom: 15px;
+}
 
 /*
 Task 4:  Targeting Elements by Descendant Selectors
@@ -40,11 +50,12 @@ Task 4:  Targeting Elements by Descendant Selectors
   text-decoration: none and a new color of your choice (this will make them look less like
   hyperlinks)
 */
-
+nav ul li a {
+  color: purple;
+}
 
 
 /* End of Section 1: Selectors in CSS */
-
 
 
 /* Section 2: Display and Positioning in CSS */
@@ -52,7 +63,10 @@ Task 4:  Targeting Elements by Descendant Selectors
 - Change the display property of the li items with class .favorite-food to "inline-block". 
 - Give it 5px of padding as well to space them out
 */
-
+.favorite-food{
+  display: inline-block;
+  padding: 5px;
+}
 
 
 /* Task 2: position: relative
@@ -60,13 +74,23 @@ Task 4:  Targeting Elements by Descendant Selectors
 - Play around with its top, right, bottom, or left properties to position it wherever you want
 - Give it text-align: center to make the text centered on your page
 */
-
+.hero{
+  position: relative;
+  text-align: center;
+  top:10px;
+  left:20px;
+}
 
 /* Task 3: Display Grid
 - Change the display property of the .features class to "grid"
 - Give it 3 equal columns by using grid-template-columns: 1fr 1fr 1fr;
 - Create a gap of 20px using the 'gap' property
 */
+.features{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
 
 
 /* Task 4: Position Fixed 
@@ -74,6 +98,11 @@ Task 4:  Targeting Elements by Descendant Selectors
 - Adjust its bottom and left values. 
 - Note that wherever you scroll on the page, it remains fixed on your viewport! 
 */
+footer{
+  position: fixed;
+  bottom: 30px;
+  left:10px;
+}
 
 
 /* End of Section 2: Display and Positioning in CSS */
